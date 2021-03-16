@@ -1,4 +1,5 @@
 var randomNumber = document.querySelectorAll('display h1');
+var score = document.querySelectorAll('ranking-table');
 
 const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d');
@@ -21,4 +22,9 @@ document.body.appendChild(canvas);
 
 const reset = function () {
 
+}
+
+
+function setScore(score) {
+    score = args;
 }
