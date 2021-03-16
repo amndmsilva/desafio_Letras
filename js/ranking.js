@@ -16,7 +16,7 @@ function construirRanking(data) {
     ordenarPorScore(data)
     
     $.each(data, function (i, item) {
-        linhas += '<tr><td class=\'id\'>' + (i + 1) + '</td><td class=\'name\'>' + item.name + '</td><td>' + item.score + '</td></tr>';
+        linhas += '<tr><td class=\'id\'>' + (i + 1) + '</td><td colspan=2 class=\'name\'>' + item.name + '</td><td>' + item.score + '</td></tr>';
     });
 
     table.append(linhas);
