@@ -1,5 +1,5 @@
 @media (min-width: 320px) {
-    .display {
+    #mostrador {
         width: 150px;
         height: 150px;
         border: 3px solid #E6D5B8;
@@ -10,7 +10,7 @@
     
     }
     
-    .display h1 {
+    #display {
         color: #E6D5B8;
         font-size: 96px;
         font-weight: 400;
@@ -18,7 +18,7 @@
         margin-top: 16px;
     }
     
-    .grid-container {
+    #grid-container {
         width: 320px;
         height: 321px;
         margin: 260px 20px 19px 20px;
@@ -26,6 +26,7 @@
         grid-template-columns: auto auto auto;
     
         position: relative;
+        
     
     }
     
@@ -36,12 +37,13 @@
         background-color:#1C2B2D;
         border: 2px solid #1F6F8B;
         font-size: 64px;
-        
+        outline: none;
     }
     
     .grid-item button:hover{
         background-color: #1F6F8B;
         color: #E6D5B8;
+        text-decoration: none;
         cursor: url(../image/Vector.png), default;
     }
 }
