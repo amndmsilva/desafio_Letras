@@ -1,14 +1,13 @@
-
 @media screen and (min-width: 320px) {
     .row {
         height: 100%;
     }
-    .title {
+    .heading {
         width: 100%;
         margin-top: 24px;
     }
     
-    .title h1 {
+    .heading h1 {
         width: 100%;
         color: #E6D5B8;
         font-weight: 400;

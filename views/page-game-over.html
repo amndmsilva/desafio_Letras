@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS G3n1u5</title>
 
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
@@ -22,22 +26,21 @@
                 <div class="game-over">
                     <h2>Fim do Jogo</h2>
                 </div>
-        
-                <div class="score">
+
+                <div class="score-display">
                     <p>score</p>
                     <h1 id="score">37</h1>
                 </div>
         
                 <div id="save-name">
-                    <input type="text" placeholder="Digite seu nome">
+                    <input id="name" type="text" placeholder="Digite seu nome">
                 </div>
         
                 <div id="save-ranking">
-                    <button>
+                    <button onclick="salvarRanking()">
                         Salvar Ranking
                     </button>
                 </div>
-
             </div>
     
             
@@ -49,8 +52,9 @@
             </a>
         </div>
         
-
     </div>
+
+    <script src="../js/game-over.js"></script>
     
 </body>
 </html>

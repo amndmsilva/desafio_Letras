@@ -1,5 +1,5 @@
 @media (min-width: 320px) {
-    #mostrador {
+    .screen-display {
         width: 150px;
         height: 150px;
         border: 3px solid #E6D5B8;
@@ -24,10 +24,7 @@
         margin: 260px 20px 19px 20px;
         display: grid;
         grid-template-columns: auto auto auto;
-    
         position: relative;
-        
-    
     }
     
     .grid-item button {
