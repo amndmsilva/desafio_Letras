@@ -1,16 +1,18 @@
-var numerosGerados = [];
+var numerosGerados = []; //salva os números gerados dentro de um array
 
-//Gerando o número aleatório que será mostrado no marcador de pontuação na página de game-over
+// Gerando o número aleatório 
 function gerarNumero() { 
     return Math.floor(Math.random() * (9) + 1);
 }
 
+// Animação mostrará a sequencia de números aleatórios gerado no display
 function gerarAnimacao() {
 	var display = document.getElementById('display');
 	i = 0;
     mostrarNumerosGerados(0, display)  
 }
 
+// Função setTimeout repete o número gerado aleatório no intervalo de tempo de 300ms
 function mostrarNumerosGerados(posicao, display) {
     display.innerHTML = numerosGerados[posicao]
 
@@ -20,12 +22,12 @@ function mostrarNumerosGerados(posicao, display) {
             display.innerHTML = ""
             return;
         } else {
-            mostrarNumerosGerados(posicao, display)
+            mostrarNumerosGerados(posicao, display) // Devolve os números que já passaram, para ser mostrado no display
         }
     }, 300);
 }
 
-//Verificando se o usuário clicou na mesma sequencia mostrada pelo marcador
+//Verificando se o usuário clicou na mesma sequencia mostrada pelo display
 function validar(numeroAtual){
     if(numeroAtual == numerosGerados[i]) {
         i++;

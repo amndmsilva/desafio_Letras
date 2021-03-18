@@ -9,6 +9,7 @@ $.ajax({
     }
 });
 
+// Função pega as informações no response da API que está no formato JSON e construi a tabela do ranking
 function construirRanking(data) {
     var table = $('#ranking-tb')
     var linhas = ''
